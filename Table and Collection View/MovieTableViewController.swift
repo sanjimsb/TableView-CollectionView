@@ -8,18 +8,8 @@
 import UIKit
 
 class MovieTableViewController: UITableViewController {
-    
-    let moviesList:[String] =  [
-            "Eternals",
-            "Dune",
-            "No Time To Die",
-            "Last Night in Soho",
-            "Ron’s Done Wrong",
-            "Halloween Kills",
-            "Venom",
-            "Antlers",
-            "The Addams Family 2"
-    ]
+    let moviesClass = MovieList()
+    var moviesList = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +22,11 @@ class MovieTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -41,6 +36,7 @@ class MovieTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        moviesList = moviesClass.movies
         let keys = moviesList.count
         return keys
     }
@@ -50,6 +46,7 @@ class MovieTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "movie", for: indexPath)
 
         // Configure the cell...
+        moviesList = moviesClass.movies
         cell.textLabel?.text = moviesList[indexPath.row]
 
         return cell
@@ -91,14 +88,16 @@ class MovieTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        let dst = segue.destination as! AddMovieViewController
+        dst.moviesList = moviesClass
     }
-    */
+    
 
 }
