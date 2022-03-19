@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		7CC14F0027E633E7008A66F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC14EFF27E633E7008A66F4 /* AppDelegate.swift */; };
 		7CC14F0227E633E7008A66F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC14F0127E633E7008A66F4 /* SceneDelegate.swift */; };
-		7CC14F0427E633E7008A66F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC14F0327E633E7008A66F4 /* ViewController.swift */; };
 		7CC14F0727E633E7008A66F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC14F0527E633E7008A66F4 /* Main.storyboard */; };
 		7CC14F0927E633E9008A66F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC14F0827E633E9008A66F4 /* Assets.xcassets */; };
 		7CC14F0C27E633E9008A66F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC14F0A27E633E9008A66F4 /* LaunchScreen.storyboard */; };
 		7CC14F1727E633E9008A66F4 /* Table_and_Collection_ViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC14F1627E633E9008A66F4 /* Table_and_Collection_ViewTests.swift */; };
 		7CC14F2127E633E9008A66F4 /* Table_and_Collection_ViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC14F2027E633E9008A66F4 /* Table_and_Collection_ViewUITests.swift */; };
 		7CC14F2327E633E9008A66F4 /* Table_and_Collection_ViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC14F2227E633E9008A66F4 /* Table_and_Collection_ViewUITestsLaunchTests.swift */; };
+		7CC14F3027E642A7008A66F4 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC14F2F27E642A7008A66F4 /* MovieTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		7CC14EFC27E633E7008A66F4 /* Table and Collection View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Table and Collection View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC14EFF27E633E7008A66F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CC14F0127E633E7008A66F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7CC14F0327E633E7008A66F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7CC14F0627E633E7008A66F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7CC14F0827E633E9008A66F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CC14F0B27E633E9008A66F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		7CC14F1C27E633E9008A66F4 /* Table and Collection ViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Table and Collection ViewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC14F2027E633E9008A66F4 /* Table_and_Collection_ViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table_and_Collection_ViewUITests.swift; sourceTree = "<group>"; };
 		7CC14F2227E633E9008A66F4 /* Table_and_Collection_ViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table_and_Collection_ViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7CC14F2F27E642A7008A66F4 /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +101,8 @@
 			children = (
 				7CC14EFF27E633E7008A66F4 /* AppDelegate.swift */,
 				7CC14F0127E633E7008A66F4 /* SceneDelegate.swift */,
-				7CC14F0327E633E7008A66F4 /* ViewController.swift */,
 				7CC14F0527E633E7008A66F4 /* Main.storyboard */,
+				7CC14F2F27E642A7008A66F4 /* MovieTableViewController.swift */,
 				7CC14F0827E633E9008A66F4 /* Assets.xcassets */,
 				7CC14F0A27E633E9008A66F4 /* LaunchScreen.storyboard */,
 				7CC14F0D27E633E9008A66F4 /* Info.plist */,
@@ -258,9 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CC14F0427E633E7008A66F4 /* ViewController.swift in Sources */,
 				7CC14F0027E633E7008A66F4 /* AppDelegate.swift in Sources */,
 				7CC14F0227E633E7008A66F4 /* SceneDelegate.swift in Sources */,
+				7CC14F3027E642A7008A66F4 /* MovieTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +446,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +474,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
