@@ -51,7 +51,7 @@
                     <navigationItem key="navigationItem" title="Movies List" id="lBf-M2-M8R">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="JX4-Cb-Aqk">
                             <connections>
-                                <segue destination="ifM-ys-KS0" kind="show" id="EAX-Pu-jr9"/>
+                                <segue destination="ifM-ys-KS0" kind="show" id="EJs-4G-Qt7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

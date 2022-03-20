@@ -11,17 +11,24 @@ class MovieTableViewController: UITableViewController {
     
     let moviesClass = MovieList()
     var moviesList = [String]()
-    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
          self.navigationItem.leftBarButtonItem = self.editButtonItem
     }
+//
+    
+    
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+    }
+    
+
 
     // MARK: - Table view data source
     
@@ -32,7 +39,6 @@ class MovieTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        
         return 1
     }
 
@@ -76,12 +82,12 @@ class MovieTableViewController: UITableViewController {
         }    
     }
 
-    /*
+    
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
+        moviesClass.moveMovie(fromIndexPath: fromIndexPath, toIndexPath: to)
     }
-    */
+    
 
     /*
     // Override to support conditional rearranging of the table view.

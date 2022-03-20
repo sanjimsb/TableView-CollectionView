@@ -21,12 +21,22 @@ class MovieList {
     ]
    
     
-    func addMovie(movie: Movie){
-        print(movie.movieTitle)
-        movies.append(movie.movieTitle)
+    func addMovie(movie: Movie) -> Bool  {
+        if (!movies.contains(movie.movieTitle)) {
+            movies.append(movie.movieTitle)
+            return true
+        }
+        
+        return false
     }
     
     func deleteMovie(indexPath: IndexPath) {
         movies.remove(at: indexPath.row)
+    }
+    
+    func moveMovie(fromIndexPath: IndexPath, toIndexPath: IndexPath) {
+        let temp = movies[fromIndexPath.row]
+        deleteMovie(indexPath: fromIndexPath)
+        movies.insert(temp, at: toIndexPath.row)
     }
 }
