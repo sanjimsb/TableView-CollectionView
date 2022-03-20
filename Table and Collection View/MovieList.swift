@@ -25,4 +25,8 @@ class MovieList {
         print(movie.movieTitle)
         movies.append(movie.movieTitle)
     }
+    
+    func deleteMovie(indexPath: IndexPath) {
+        movies.remove(at: indexPath.row)
+    }
 }
