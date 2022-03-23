@@ -14,10 +14,10 @@ class AddMovieViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
+    // adds a movie to MovieList
     @IBAction func addMovieAction(_ sender: Any) {
         if !newMovieLabel.text!.isEmpty{
             let getMovieTitle = newMovieLabel.text!
@@ -31,7 +31,7 @@ class AddMovieViewController: UIViewController {
         }
     }
     
-    
+    // shows toast message
     func showToast(message : String) {
 
         let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 80, y: self.view.frame.size.height-100, width: 160, height: 35))

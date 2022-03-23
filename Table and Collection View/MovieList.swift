@@ -20,7 +20,7 @@ class MovieList {
         "The Addams Family 2"
     ]
    
-    
+    //Adds movie to the movies list
     func addMovie(movie: Movie) -> Bool  {
         if (!movies.contains(movie.movieTitle)) {
             movies.append(movie.movieTitle)
@@ -30,10 +30,13 @@ class MovieList {
         return false
     }
     
+    // deletes a movie from the list
     func deleteMovie(indexPath: IndexPath) {
         movies.remove(at: indexPath.row)
     }
     
+    // movese movie from the provides index path i.e. current index to the new index path that is
+    // provided
     func moveMovie(fromIndexPath: IndexPath, toIndexPath: IndexPath) {
         let temp = movies[fromIndexPath.row]
         deleteMovie(indexPath: fromIndexPath)
